@@ -133,6 +133,7 @@
                     <connections>
                         <outlet property="txtEmail" destination="zaC-dO-ZX3" id="CUL-lK-Ucd"/>
                         <outlet property="txtPassword" destination="Tqz-Fp-vxF" id="FGg-VN-IO7"/>
+                        <segue destination="NZE-WT-oDZ" kind="presentation" identifier="SignInToHome" modalPresentationStyle="fullScreen" id="Vz2-2k-YzY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -332,6 +333,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vQa-u0-Lpz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="814" y="72"/>
+        </scene>
+        <!--Food View Controller-->
+        <scene sceneID="Cu5-Za-ok1">
+            <objects>
+                <viewController id="NZE-WT-oDZ" customClass="FoodViewController" customModule="Cafe_Manager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MPs-UE-rJX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOOD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnT-Kl-rhA">
+                                <rect key="frame" x="20" y="20" width="70" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" red="0.43921568630000002" green="0.75686274509999996" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ezX-N8-XV8">
+                                <rect key="frame" x="20" y="70" width="335" height="577"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="NZE-WT-oDZ" id="IGg-Ft-jNx"/>
+                                    <outlet property="delegate" destination="NZE-WT-oDZ" id="zzL-pj-gmP"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="h0r-gw-tfJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ezX-N8-XV8" firstAttribute="leading" secondItem="h0r-gw-tfJ" secondAttribute="leading" constant="20" id="4G1-jE-hbN"/>
+                            <constraint firstItem="ezX-N8-XV8" firstAttribute="top" secondItem="GnT-Kl-rhA" secondAttribute="bottom" constant="20" id="7I7-4M-qb8"/>
+                            <constraint firstItem="h0r-gw-tfJ" firstAttribute="bottom" secondItem="ezX-N8-XV8" secondAttribute="bottom" constant="20" id="JtO-1f-UAI"/>
+                            <constraint firstItem="GnT-Kl-rhA" firstAttribute="leading" secondItem="h0r-gw-tfJ" secondAttribute="leading" constant="20" id="OSE-Fc-dO9"/>
+                            <constraint firstItem="h0r-gw-tfJ" firstAttribute="trailing" secondItem="ezX-N8-XV8" secondAttribute="trailing" constant="20" id="jWm-g1-EXj"/>
+                            <constraint firstItem="GnT-Kl-rhA" firstAttribute="top" secondItem="h0r-gw-tfJ" secondAttribute="top" constant="20" id="y7M-fo-sLi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tblFood" destination="ezX-N8-XV8" id="LzH-1r-gU8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hkv-8a-jaE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.600000000000001" y="816.34182908545733"/>
         </scene>
     </scenes>
     <resources>

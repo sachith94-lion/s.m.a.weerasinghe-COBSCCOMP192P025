@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		162154F62638393A00149537 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162154F52638393A00149537 /* SessionManager.swift */; };
+		162154FE2638401C00149537 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162154FD2638401C00149537 /* FoodViewController.swift */; };
+		162155052638464B00149537 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162155032638464B00149537 /* FoodTableViewCell.swift */; };
+		162155062638464B00149537 /* FoodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 162155042638464B00149537 /* FoodTableViewCell.xib */; };
 		16247B0B262983CC003D0138 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16247B0A262983CC003D0138 /* GoogleService-Info.plist */; };
 		16247B132629882D003D0138 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16247B122629882D003D0138 /* SignInViewController.swift */; };
 		16247B1E26298BBE003D0138 /* EntityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16247B1D26298BBE003D0138 /* EntityModel.swift */; };
@@ -42,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		162154F52638393A00149537 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		162154FD2638401C00149537 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		162155032638464B00149537 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
+		162155042638464B00149537 /* FoodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodTableViewCell.xib; sourceTree = "<group>"; };
 		16247B0A262983CC003D0138 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		16247B122629882D003D0138 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		16247B1D26298BBE003D0138 /* EntityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityModel.swift; sourceTree = "<group>"; };
@@ -99,6 +107,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		162154F42638390000149537 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				162154F52638393A00149537 /* SessionManager.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		16215502263845E600149537 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				162155032638464B00149537 /* FoodTableViewCell.swift */,
+				162155042638464B00149537 /* FoodTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
 		16247B0F26298649003D0138 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +145,7 @@
 			children = (
 				16247B122629882D003D0138 /* SignInViewController.swift */,
 				16247B222629A705003D0138 /* SignUpViewController.swift */,
+				162154FD2638401C00149537 /* FoodViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -149,6 +175,8 @@
 		16DA3DA026295B83000F16FB /* Cafe-Manager */ = {
 			isa = PBXGroup;
 			children = (
+				16215502263845E600149537 /* TableViewCells */,
+				162154F42638390000149537 /* Util */,
 				16247B1126298674003D0138 /* Controller */,
 				16247B102629865C003D0138 /* Model */,
 				16247B0F26298649003D0138 /* Views */,
@@ -314,6 +342,7 @@
 			files = (
 				16DA3DB126295B84000F16FB /* LaunchScreen.storyboard in Resources */,
 				16247B0B262983CC003D0138 /* GoogleService-Info.plist in Resources */,
+				162155062638464B00149537 /* FoodTableViewCell.xib in Resources */,
 				16DA3DAE26295B84000F16FB /* Assets.xcassets in Resources */,
 				16DA3DA926295B83000F16FB /* Main.storyboard in Resources */,
 			);
@@ -445,10 +474,13 @@
 			files = (
 				16247B232629A705003D0138 /* SignUpViewController.swift in Sources */,
 				16247B1E26298BBE003D0138 /* EntityModel.swift in Sources */,
+				162154FE2638401C00149537 /* FoodViewController.swift in Sources */,
 				16DA3DA226295B83000F16FB /* AppDelegate.swift in Sources */,
 				16DA3DAC26295B83000F16FB /* Cafe_Manager.xcdatamodeld in Sources */,
 				16247B132629882D003D0138 /* SignInViewController.swift in Sources */,
 				16DA3DA426295B83000F16FB /* SceneDelegate.swift in Sources */,
+				162154F62638393A00149537 /* SessionManager.swift in Sources */,
+				162155052638464B00149537 /* FoodTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

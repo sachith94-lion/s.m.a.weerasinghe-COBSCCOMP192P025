@@ -7,11 +7,14 @@
 
 import UIKit
 import Firebase
+import Loaf
 
 class SignInViewController: UIViewController {
 
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
+    
+    
     
     var number: Int?
     var fetchedNumber: Int = 0
@@ -61,23 +64,17 @@ class SignInViewController: UIViewController {
             
             if let err = error {
                 print(err.localizedDescription)
+                Loaf("User name or password is invalid", state: .error, sender: self).show()
                 return
             }
             
-            if let result = authResult {
-                print("User Email : \(result.user.email ?? "Not found")")
-            }
+            //save user logged in state
+            let sessionManager = SessionManager()
+            sessionManager.saveUserLogin()
+            self.performSegue(withIdentifier: "SignInToHome", sender: nil)
         }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+   
 
 }

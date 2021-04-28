@@ -7,6 +7,10 @@ target 'Cafe-Manager' do
 
   # Pods for Cafe-Manager
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'SwiftyJSON'
+  pod 'Kingfisher'
+  pod 'Loaf'
 
   target 'Cafe-ManagerTests' do
     inherit! :search_paths

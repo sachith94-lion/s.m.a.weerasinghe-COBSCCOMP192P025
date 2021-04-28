@@ -20,4 +20,6 @@ struct FoodItem {
     var foodDescription: String
     var foodPrice: Double
     var discount: Int
+    var image: String
+    var category: String
 }
