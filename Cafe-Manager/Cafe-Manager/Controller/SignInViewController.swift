@@ -14,6 +14,7 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     
+    var ref: DatabaseReference!
     
     
     var number: Int?
@@ -21,6 +22,7 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ref = Database.database().reference()
 
         // Do any additional setup after loading the view.
     }
@@ -54,13 +56,46 @@ class SignInViewController: UIViewController {
                 return
             }
             
-            //save user logged in state
-            let sessionManager = SessionManager()
-            sessionManager.saveUserLogin()
-            self.performSegue(withIdentifier: "SignInToHome", sender: nil)
+            if let email = authResult?.user.email {
+                self.getUserData(email: email)
+            }
+            else{
+                Loaf("User email not found", state: .error, sender: self).show()
+            }
+            
+            
         }
     }
     
+    func getUserData(email: String) {
+        ref.child("users")
+            .child(email
+                    .replacingOccurrences(of: "@", with: "_")
+                            .replacingOccurrences(of: ".", with: "_")).observe(.value, with: {
+            (snapshot) in
+                                
+                                if snapshot.hasChildren() {
+                                    if let data = snapshot.value {
+                                        if let userData = data as? [String: String]{
+                                            
+                                            let user = User(
+                                                userName: userData["userName"]!,
+                                                userEmail: userData["userEmail"]!,
+                                                userPassword: userData["userPassword"]!,
+                                                userPhone: userData["userPhone"]!)
+                                            
+                                            let sesstionMGR = SessionManager()
+                                            sesstionMGR.saveUserLogin(user: user)
+                                            self.performSegue(withIdentifier: "SignInToHome", sender: nil)
+                                        }
+                                    }
+                                }
+                                else{
+                                    Loaf("User not found", state: .error, sender: self).show()
+                                }
    
+        })
+
+    }
 
 }
