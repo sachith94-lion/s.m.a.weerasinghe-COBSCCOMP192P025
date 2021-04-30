@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vVH-2u-nSd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vVH-2u-nSd">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,7 +19,7 @@
         <!--Account-->
         <scene sceneID="sSt-2t-vf7">
             <objects>
-                <viewController id="Mfc-Yb-b43" customClass="AccountViewController" customModule="CafeManagerTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Mfc-Yb-b43" customClass="AccountViewController" customModule="CafeManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aDl-Q4-6c8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,7 +27,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlk-5l-M40">
                                 <rect key="frame" x="20" y="20" width="76.5" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.43921568630000002" green="0.75686274509999996" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ziF-AQ-qxp">
@@ -130,7 +130,7 @@
         <!--Order-->
         <scene sceneID="I6o-27-qU4">
             <objects>
-                <viewController id="xAS-cF-hcu" customClass="OrderViewController" customModule="CafeManagerTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xAS-cF-hcu" customClass="OrderViewController" customModule="CafeManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FzU-vI-asm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,6 +145,7 @@
                                     <segment title="Arrive"/>
                                     <segment title="Cancel"/>
                                 </segments>
+                                <color key="selectedSegmentTintColor" red="0.43921568630000002" green="0.75686274509999996" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="onSegChanged:" destination="xAS-cF-hcu" eventType="valueChanged" id="CBg-lH-THw"/>
                                 </connections>
@@ -183,7 +184,7 @@
         <!--Store-->
         <scene sceneID="9Ur-xO-asu">
             <objects>
-                <viewController id="1TL-fz-ujQ" customClass="StoreRootViewController" customModule="CafeManagerTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1TL-fz-ujQ" customClass="StoreRootViewController" customModule="CafeManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FWy-3b-YRV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -195,6 +196,7 @@
                                     <segment title="Category"/>
                                     <segment title="Menu"/>
                                 </segments>
+                                <color key="selectedSegmentTintColor" red="0.43921568630000002" green="0.75686274509999996" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="onSegIndexChanged:" destination="1TL-fz-ujQ" eventType="valueChanged" id="gnR-2u-WDc"/>
                                 </connections>
@@ -227,7 +229,7 @@
         <!--Item 2-->
         <scene sceneID="5Y9-Jh-lIZ">
             <objects>
-                <viewController id="22H-im-ZbQ" customClass="CategoryViewController" customModule="CafeManagerTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="22H-im-ZbQ" customClass="CategoryViewController" customModule="CafeManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TfU-Ur-cA7">
                         <rect key="frame" x="0.0" y="0.0" width="335" height="537"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -235,7 +237,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add new Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXr-ah-163">
                                 <rect key="frame" x="20" y="20" width="141" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.43921568630000002" green="0.75686274509999996" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tKK-GS-C8L">
@@ -253,7 +255,9 @@
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPa-Yy-Gza">
                                 <rect key="frame" x="120" y="100" width="95" height="30"/>
-                                <state key="normal" title="Add Category"/>
+                                <state key="normal" title="Add Category">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="onAddCategoryPresses:" destination="22H-im-ZbQ" eventType="touchUpInside" id="4Ae-bj-5ug"/>
                                 </connections>
@@ -288,7 +292,7 @@
         <!--Item-->
         <scene sceneID="RDA-19-Pcy">
             <objects>
-                <viewController id="ZW3-WO-OaN" customClass="MenuViewController" customModule="CafeManagerTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZW3-WO-OaN" customClass="MenuViewController" customModule="CafeManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C5b-hH-PRH">
                         <rect key="frame" x="0.0" y="0.0" width="335" height="537"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -331,7 +335,9 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lw3-ha-IYN">
                                 <rect key="frame" x="119.5" y="438" width="96" height="30"/>
-                                <state key="normal" title="Add FoodItem"/>
+                                <state key="normal" title="Add FoodItem">
+                                    <color key="titleColor" red="0.43921568630000002" green="0.75686274509999996" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="onAddFoodPressed:" destination="ZW3-WO-OaN" eventType="touchUpInside" id="gvQ-bx-dr1"/>
                                 </connections>
@@ -344,9 +350,11 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F4v-Id-q9x">
                                 <rect key="frame" x="266" y="272.5" width="51" height="31"/>
+                                <color key="onTintColor" red="0.43921568630000002" green="0.75686274509999996" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8QY-sB-cE6">
-                                <rect key="frame" x="117.5" y="303" width="100" height="98"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="folder.fill.badge.plus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8QY-sB-cE6">
+                                <rect key="frame" x="117.5" y="303.5" width="101.5" height="97.5"/>
+                                <color key="tintColor" red="0.43921568630000002" green="0.75686274509999996" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="BxW-pd-GVc"/>
                                     <constraint firstAttribute="height" constant="100" id="kEU-dy-LHh"/>
@@ -389,7 +397,7 @@
         <!--Item 1-->
         <scene sceneID="lTj-0Q-IXF">
             <objects>
-                <viewController id="iDm-Ds-Gc0" customClass="PreviewViewController" customModule="CafeManagerTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="iDm-Ds-Gc0" customClass="PreviewViewController" customModule="CafeManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oAv-pv-CZm">
                         <rect key="frame" x="0.0" y="0.0" width="335" height="537"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -483,7 +491,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="camera.fill" catalog="system" width="128" height="94"/>
+        <image name="folder.fill.badge.plus" catalog="system" width="128" height="91"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
