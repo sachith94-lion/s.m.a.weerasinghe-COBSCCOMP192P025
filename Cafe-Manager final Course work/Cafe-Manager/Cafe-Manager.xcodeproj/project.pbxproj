@@ -15,6 +15,7 @@
 		1621560F263BC7A900149537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1621560D263BC7A900149537 /* LaunchScreen.storyboard */; };
 		1621561A263BC7AA00149537 /* Cafe_ManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16215619263BC7AA00149537 /* Cafe_ManagerTests.swift */; };
 		16215625263BC7AA00149537 /* Cafe_ManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16215624263BC7AA00149537 /* Cafe_ManagerUITests.swift */; };
+		16215648263BCCDD00149537 /* StoreRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16215647263BCCDD00149537 /* StoreRootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		16215620263BC7AA00149537 /* Cafe-ManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cafe-ManagerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16215624263BC7AA00149537 /* Cafe_ManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafe_ManagerUITests.swift; sourceTree = "<group>"; };
 		16215626263BC7AA00149537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16215647263BCCDD00149537 /* StoreRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreRootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,8 +150,17 @@
 		16215637263BC7FE00149537 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1621563B263BCC8E00149537 /* Store */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		1621563B263BCC8E00149537 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				16215647263BCCDD00149537 /* StoreRootViewController.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16215648263BCCDD00149537 /* StoreRootViewController.swift in Sources */,
 				16215600263BC7A500149537 /* AppDelegate.swift in Sources */,
 				1621560A263BC7A500149537 /* Cafe_Manager.xcdatamodeld in Sources */,
 				16215602263BC7A500149537 /* SceneDelegate.swift in Sources */,
