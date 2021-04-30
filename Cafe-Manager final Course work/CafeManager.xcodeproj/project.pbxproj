@@ -13,6 +13,8 @@
 		1621571B263C3D3000149537 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1621571A263C3D3000149537 /* SessionManager.swift */; };
 		16215720263C3EB500149537 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1621571F263C3EB500149537 /* LaunchViewController.swift */; };
 		16215725263C406A00149537 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16215724263C406900149537 /* SignUpViewController.swift */; };
+		1621572A263C4DB100149537 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16215729263C4DB100149537 /* ForgetPasswordViewController.swift */; };
+		16215743263C55F000149537 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16215742263C55EF00149537 /* Service.swift */; };
 		3DD260D06C4E71C1097B3A76 /* Pods_CafeManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB91FE40628FC12981AEE50D /* Pods_CafeManagerTests.framework */; };
 		4F15B482263BC9C8008DE0B7 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F15B480263BC9C8008DE0B7 /* CategoryCollectionViewCell.swift */; };
 		4F15B483263BC9C8008DE0B7 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F15B481263BC9C8008DE0B7 /* CategoryCollectionViewCell.xib */; };
@@ -70,6 +72,8 @@
 		1621571A263C3D3000149537 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		1621571F263C3EB500149537 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		16215724263C406900149537 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		16215729263C4DB100149537 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		16215742263C55EF00149537 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		1E45F63EC74DE8B56B978006 /* Pods-CafeManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeManagerTests.release.xcconfig"; path = "Target Support Files/Pods-CafeManagerTests/Pods-CafeManagerTests.release.xcconfig"; sourceTree = "<group>"; };
 		2264FC307A65C4789B471159 /* Pods-CafeManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-CafeManagerTests/Pods-CafeManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4F15B480263BC9C8008DE0B7 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -248,6 +252,7 @@
 				16215710263C3BB300149537 /* SignInViewController.swift */,
 				1621571F263C3EB500149537 /* LaunchViewController.swift */,
 				16215724263C406900149537 /* SignUpViewController.swift */,
+				16215729263C4DB100149537 /* ForgetPasswordViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -302,6 +307,7 @@
 				4F545050263BC1530023D026 /* ImageFetcher.swift */,
 				16215715263C3CCC00149537 /* InputValidator.swift */,
 				1621571A263C3D3000149537 /* SessionManager.swift */,
+				16215742263C55EF00149537 /* Service.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -560,6 +566,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1621572A263C4DB100149537 /* ForgetPasswordViewController.swift in Sources */,
 				4F545047263BB6F80023D026 /* Model.swift in Sources */,
 				4F54504D263BBC360023D026 /* CategoryInfoTableViewCell.swift in Sources */,
 				4F15B486263BCDD4008DE0B7 /* FoodItemTableViewCell.swift in Sources */,
@@ -577,6 +584,7 @@
 				4F545001263B22DF0023D026 /* SceneDelegate.swift in Sources */,
 				16215725263C406A00149537 /* SignUpViewController.swift in Sources */,
 				16215716263C3CCC00149537 /* InputValidator.swift in Sources */,
+				16215743263C55F000149537 /* Service.swift in Sources */,
 				4F15B48A263BDF18008DE0B7 /* OrderTableViewCell.swift in Sources */,
 				4F545033263B26AF0023D026 /* StoreRootViewController.swift in Sources */,
 				4F545051263BC1530023D026 /* ImageFetcher.swift in Sources */,

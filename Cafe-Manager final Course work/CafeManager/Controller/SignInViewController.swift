@@ -26,6 +26,10 @@ class SignInViewController: UIViewController {
     }
     
 
+    @IBAction func forgetPasswordPressed(_ sender: UIButton) {
+        
+    }
+    
     @IBAction func onSignInPressed(_ sender: UIButton) {
         if !InputValidator.isValidEmail(email: txtEmail.text ?? ""){
             Loaf("Invalid email address!", state: .error, sender: self).show()
