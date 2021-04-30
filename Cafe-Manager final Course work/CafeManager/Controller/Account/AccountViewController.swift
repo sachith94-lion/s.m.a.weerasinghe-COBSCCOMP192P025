@@ -17,6 +17,8 @@ class AccountViewController: UIViewController {
     
     @IBOutlet weak var tblOrders: UITableView!
     
+    let sessionMGR = SessionManager()
+    
     let datePicker = UIDatePicker()
     let dateFormatter = DateFormatter()
     
@@ -46,6 +48,9 @@ class AccountViewController: UIViewController {
         txtTo.text = dateFormatter.string(from: Date())
     }
 
+    @IBAction func onSignOutPressed(_ sender: UIButton) {
+        sessionMGR.clearUserLoggedState()
+    }
 }
 
 extension AccountViewController {
@@ -185,4 +190,6 @@ extension AccountViewController: UITableViewDelegate, UITableViewDataSource {
         cell.configXIB(order: filteredOrders[indexPath.row])
         return cell
     }
+    
+    
 }
